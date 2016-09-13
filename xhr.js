@@ -145,7 +145,7 @@ module.exports = function xhrAdapter(config) {
         // Abort the HTTP request
         request.abort();
         // Reject with `CancellationError` so that the caller can distinguish between cancellation and failure
-        reject(new cancel.CancellationError('Request has been canceled.'));
+        // reject(new cancel.CancellationError('Request has been canceled.'));
       }
     });
 
